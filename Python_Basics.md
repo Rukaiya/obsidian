@@ -15,6 +15,30 @@ print("Exit")
 ```
 -   [input()](https://www.geeksforgeeks.org/python-input-function/)
 -   [fileinput.input()](https://www.geeksforgeeks.org/fileinput-input-in-python/)
+#### Output
+- stdout
+```python
+import sys
+
+def print_to_stdout(*a):
+
+	# Here a is the array holding the objects
+	# passed as the argument of the function
+	print(*a, file=sys.stdout)
+
+print_to_stdout("Hello World")
+
+```
+- logging
+```python
+import logging
+
+logging.basicConfig(format='%(message)s')
+log = logging.getLogger(__name__)
+log.warning('Error: Hello World')
+print('GeeksforGeeks')
+
+```
 
 #### List
 - To check if an element is present without getting error try these -
