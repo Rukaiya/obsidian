@@ -1,3 +1,21 @@
+#### Input
+There are a number of ways in which we can take input from stdin in [Python](https://www.geeksforgeeks.org/python-programming-language/). 
+-   [sys](https://www.geeksforgeeks.org/python-sys-module/).stdin
+	- The **sys** module in python helps us to access the variables maintained by the interpreter. It also provides functions to interact with the interpreter.
+``` py
+import sys
+
+for line in sys.stdin:
+	if 'q' == line.rstrip():
+		break
+	print(f'Input : {line}')
+
+print("Exit")
+
+```
+-   [input()](https://www.geeksforgeeks.org/python-input-function/)
+-   [fileinput.input()](https://www.geeksforgeeks.org/fileinput-input-in-python/)
+
 #### List
 - To check if an element is present without getting error try these -
 	- `if item in list`

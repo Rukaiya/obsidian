@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Python_Class.md",
+            "file": "Python_Basics.md",
             "mode": "source",
             "source": false
           }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Python_Class.md",
+            "file": "Python_Basics.md",
             "mode": "preview",
             "source": false
           }
@@ -91,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python_Class.md",
+                "file": "Python_Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python_Class.md",
+                "file": "Python_Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python_Class.md"
+                "file": "Python_Basics.md"
               }
             }
           }
@@ -145,7 +145,7 @@
   },
   "active": "93576f1ef077f930",
   "lastOpenFiles": [
-    "Python_Basics.md",
-    "Python_Class.md"
+    "Python_Class.md",
+    "Python_Basics.md"
   ]
 }
