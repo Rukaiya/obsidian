@@ -26,6 +26,7 @@ Basically, data structures are divided into two categories:
 <table>
 <tr>
 </tr>
+
 <td>
 </td>
 </table>
