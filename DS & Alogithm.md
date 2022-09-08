@@ -50,33 +50,9 @@ Basically, data structures are divided into two categories:
 	    <td>Time complexity remains the same.</td>
 	  </tr>
 	  <tr>
-	    <td></td>
-	    <td></td>
+	    <td>Example: Arrays, Stack, Queue</td>
+	    <td>Example: Tree, Graph, Map</td>
 	  </tr>
 	 
 </table>
 
-
-
-
-
-
-All the items are present on the single layer.
-
-The data items are present at different layers.
-
-It can be traversed on a single run. That is, if we start from the first element, we can traverse all the elements sequentially in a single pass.
-
-It requires multiple runs. That is, if we start from the first element it might not be possible to traverse all the elements in a single pass.
-
-The memory utilization is not efficient.
-
-Different structures utilize memory in different efficient ways depending on the need.
-
-The time complexity increase with the data size.
-
-Time complexity remains the same.
-
-Example: Arrays, Stack, Queue
-
-Example: Tree, Graph, Map
