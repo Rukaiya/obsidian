@@ -23,16 +23,20 @@ Basically, data structures are divided into two categories:
 		-   [B-Tree](https://www.programiz.com/dsa/b-tree)
 		-   [B+ Tree](https://www.programiz.com/dsa/b-plus-tree)
 		-   [Red-Black Tree](https://www.programiz.com/dsa/red-black-tree)
+		
 <table>
-<tr>
-</tr>
-
-<td>
-</td>
+	<tr>
+	<b>Linear Data Structures</b>
+	</tr>
+	<tr>
+	**Non Linear Data Structures**
+	</tr>
+	<td>
+	</td>
 </table>
-**Linear Data Structures**
 
-**Non Linear Data Structures**
+
+
 
 The data items are arranged in sequential order, one after the other.
 
