@@ -33,14 +33,29 @@ Basically, data structures are divided into two categories:
 		    <td>The data items are arranged in sequential order, one after the other.</td>  
 		    <td>The data items are arranged in non-sequential order (hierarchical manner).</td>  
 	  </tr>
+	  <tr>
+	    <td></td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td></td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td></td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td></td>
+	    <td></td>
+	  </tr>
+	 
 </table>
 
 
 
 
-The data items are arranged in sequential order, one after the other.
 
-The data items are arranged in non-sequential order (hierarchical manner).
 
 All the items are present on the single layer.
 
