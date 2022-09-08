@@ -34,16 +34,20 @@ Basically, data structures are divided into two categories:
 		    <td>The data items are arranged in non-sequential order (hierarchical manner).</td>  
 	  </tr>
 	  <tr>
-	    <td></td>
-	    <td></td>
+	    <td>All the items are present on the single layer.</td>
+	    <td>The data items are present at different layers.</td>
 	  </tr>
 	  <tr>
-	    <td></td>
-	    <td></td>
+	    <td>It can be traversed on a single run. That is, if we start from the first element, we can traverse all the elements sequentially in a single pass.</td>
+	    <td>It requires multiple runs. That is, if we start from the first element it might not be possible to traverse all the elements in a single pass.</td>
 	  </tr>
 	  <tr>
-	    <td></td>
-	    <td></td>
+	    <td>The memory utilization is not efficient.</td>
+	    <td>Different structures utilize memory in different efficient ways depending on the need.</td>
+	  </tr>
+	  <tr>
+	    <td>The time complexity increase with the data size.</td>
+	    <td>Time complexity remains the same.</td>
 	  </tr>
 	  <tr>
 	    <td></td>
