@@ -25,19 +25,14 @@ Basically, data structures are divided into two categories:
 		-   [Red-Black Tree](https://www.programiz.com/dsa/red-black-tree)
 		
 <table>
-<tr>  
-    <th>Company</th>  
-    <th>Contact</th>  
-    <th>Country</th>  
-  </tr>
-	<tr>
-	<b>Linear Data Structures</b>
-	</tr>
-	<tr>
-	<b>Non Linear Data Structures</b>
-	</tr>
-	<td>
-	</td>
+	<tr>  
+	    <th>Linear Data Structures</th>  
+	    <th>Non Linear Data Structures</th>  
+	  </tr>
+	  <tr>  
+		    <td>The data items are arranged in sequential order, one after the other.</td>  
+		    <td>The data items are arranged in non-sequential order (hierarchical manner).</td>  
+	  </tr>
 </table>
 
 
