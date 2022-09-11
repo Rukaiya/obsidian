@@ -56,3 +56,16 @@ Basically, data structures are divided into two categories:
 	 
 </table>
 
+### Asymptotic Notations
+
+Asymptotic notations are the mathematical notations used to describe the running time of an algorithm when the input tends towards a particular value or a limiting value.
+- The efficiency of an algorithm depends on the amount of time, storage and other resources required to execute the algorithm.
+
+There are mainly three asymptotic notations:
+
+-   Big-O notation
+	- Big-O notation represents the upper bound of the running time of an algorithm. Thus, it gives the worst-case complexity of an algorithm.
+-   Omega notation
+	- Omega notation represents the lower bound of the running time of an algorithm. Thus, it provides the best case complexity of an algorithm.
+-   Theta notation
+	- Theta notation encloses the function from above and below. Since it represents the upper and the lower bound of the running time of an algorithm, it is used for analyzing the average-case complexity of an algorithm.
