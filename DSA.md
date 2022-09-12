@@ -98,3 +98,11 @@ Although stack is a simple data structure to implement, it is very powerful. The
 -   return the value pointed by FRONT
 -   increase the FRONT index by 1
 -   for the last element, reset the values of FRONT and REAR to -1
+
+### Applications of Queue
+
+-   CPU scheduling, Disk Scheduling
+-   When data is transferred asynchronously between two processes.The queue is used for synchronization. For example: IO Buffers, pipes, file IO, etc
+-   Handling of interrupts in real-time systems.
+-   Call Center phone systems use Queues to hold people calling them in order.
+
