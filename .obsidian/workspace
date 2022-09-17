@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DSA.md",
+            "file": "DSA/DSA Basics.md",
             "mode": "source",
             "source": false
           }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DSA.md",
+            "file": "DSA/DSA Basics.md",
             "mode": "preview",
             "source": false
           }
@@ -91,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA.md",
+                "file": "DSA/DSA Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA.md",
+                "file": "DSA/DSA Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA.md"
+                "file": "DSA/DSA Basics.md"
               }
             }
           }
@@ -143,9 +143,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "993e1d3b41488e3b",
+  "active": "56b5d7dcd77c10b6",
   "lastOpenFiles": [
-    "Python_Basics.md",
-    "Python_Class.md"
+    "DSA/Non-linear Data Structure.md",
+    "DSA/DSA Basics.md",
+    "DSA/Linear Data Structure.md",
+    "Python/Python_Basics.md",
+    "Python/Python_Class.md"
   ]
 }
