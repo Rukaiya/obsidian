@@ -5,18 +5,18 @@ An algorithm is a set of well-defined instructions to solve a particular problem
 
 Basically, data structures are divided into two categories:
 
--   Linear data structure
+-   [[Linear Data Structure]]
 	- Array
-	- Stack
-	- Queue
+	- [[Linear Data Structure#Applications of Stack Data Structure | Stack]]
+	- [[Linear Data Structure#Applications of Queue | Queue]]
 	- Linked List
--   Non-linear data structure
+-   [[Non-linear Data Structure]]
 	- Graph
 		-   [Spanning Tree and Minimum Spanning Tree](https://www.programiz.com/dsa/spanning-tree-and-minimum-spanning-tree)
 		-   [Strongly Connected Components](https://www.programiz.com/dsa/strongly-connected-components)
 		-   [Adjacency Matrix](https://www.programiz.com/dsa/graph-adjacency-matrix)
 		-   [Adjacency List](https://www.programiz.com/dsa/graph-adjacency-list)
-	- Trees
+	- [[Non-linear Data Structure#Tree | Tree]]
 		- [Binary Tree](https://www.programiz.com/dsa/binary-tree)
 		-   [Binary Search Tree](https://www.programiz.com/dsa/binary-search-tree)
 		-   [AVL Tree](https://www.programiz.com/dsa/avl-tree)
@@ -76,33 +76,4 @@ There are mainly three asymptotic notations:
 -   [Quick Sort](https://www.programiz.com/dsa/quick-sort)
 -   Strassen's Matrix multiplication
 -   Karatsuba Algorithm
-
-### Applications of Stack Data Structure
-
-Although stack is a simple data structure to implement, it is very powerful. The most common uses of a stack are:
-
--   **To reverse a word** - Put all the letters in a stack and pop them out. Because of the LIFO order of stack, you will get the letters in reverse order.
--   **In compilers** - Compilers use the stack to calculate the value of expressions like `2 + 4 / 5 * (7 - 9)` by converting the expression to prefix or postfix form.
--   **In browsers** - The back button in a browser saves all the URLs you have visited previously in a stack. Each time you visit a new page, it is added on top of the stack. When you press the back button, the current URL is removed from the stack, and the previous URL is accessed.
-
-### Enqueue Operation
-
--   check if the queue is full
--   for the first element, set the value of FRONT to 0
--   increase the REAR index by 1
--    add the new element in the position pointed to by REAR
-
-### Dequeue Operation
-
--   check if the queue is empty
--   return the value pointed by FRONT
--   increase the FRONT index by 1
--   for the last element, reset the values of FRONT and REAR to -1
-
-### Applications of Queue
-
--   CPU scheduling, Disk Scheduling
--   When data is transferred asynchronously between two processes.The queue is used for synchronization. For example: IO Buffers, pipes, file IO, etc
--   Handling of interrupts in real-time systems.
--   Call Center phone systems use Queues to hold people calling them in order.
 
