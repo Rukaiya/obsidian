@@ -1,0 +1,1 @@
+- **manage.py** does the same thing as **django-admin** but also sets the DJANGO_SETTINGS_MODULE environment variable so that it points to the project’s settings.py file.
