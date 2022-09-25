@@ -79,6 +79,7 @@ urlpatterns = [
 ```
 ## Database setup
 `python manage.py migrate`
+- While you’re editing mysite/settings.py, set TIME_ZONE to your time zone.
 #### Creating models[¶](https://docs.djangoproject.com/en/4.1/intro/tutorial02/#creating-models "Permalink to this headline")
 **polls/models.py**
 ```python
