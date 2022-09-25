@@ -9,24 +9,28 @@
 **polls/views.py**
 ```python
 
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
+from django.views import generic
 
 from .models import Choice, Question
 
-def index(request):
-    latest_question_list = Question.objects.order_by('-pub_date')[:5]
-    context = {'latest_question_list': latest_question_list}
-    return render(request, 'polls/index.html', context)
+class IndexView(generic.ListView):
+    template_name = 'polls/index.html'
+    context_object_name = 'latest_question_list'
 
-def detail(request, question_id):
-     question = get_object_or_404(Question, pk=question_id)
-    return render(request, 'polls/detail.html', {'question': question})
-    
-def results(request, question_id):
-    question = get_object_or_404(Question, pk=question_id)
-    return render(request, 'polls/results.html', {'question': question})
+    def get_queryset(self):
+        """Return the last five published questions."""
+        return Question.objects.order_by('-pub_date')[:5]
+
+class DetailView(generic.DetailView):
+    model = Question
+    template_name = 'polls/detail.html'
+
+class ResultsView(generic.DetailView):
+    model = Question
+    template_name = 'polls/results.html'
 
 def vote(request, question_id):
      question = get_object_or_404(Question, pk=question_id)
@@ -55,9 +59,10 @@ from . import views
 
 app_name = 'polls'
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('<int:question_id>/', views.detail, name='detail'),
-	path('<int:question_id>/results/', views.results, name='results'),
+    path('', views.IndexView.as_view(), name='index'),
+    path('<int:pk>/', views.DetailView.as_view(), name='detail'),
+    path('<int:pk>/results/', views.ResultsView.as_view(), name='results'),
+    path('<int:question_id>/vote/', views.vote, name='vote'),
 	path('<int:question_id>/vote/', views.vote, name='vote'),
 ]
 ```
@@ -125,7 +130,7 @@ admin.site.register(Question)
 ```
 ___
 **polls/templates/polls/index.html**
-```python
+```html
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
@@ -138,7 +143,7 @@ ___
 ```
 ___
  **polls/templates/polls/detail.html**
- ```python
+ ```html
  <form action="{% url 'polls:vote' question.id %}" method="post">
 {% csrf_token %}
 <fieldset>
@@ -151,4 +156,17 @@ ___
 </fieldset>
 <input type="submit" value="Vote">
 </form>
+```
+___
+polls/templats/polls/results.html
+```html
+<h1>{{ question.question_text }}</h1>
+
+<ul>
+{% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'polls:detail' question.id %}">Vote again?</a>
 ```
