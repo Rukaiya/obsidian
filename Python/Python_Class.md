@@ -91,3 +91,55 @@ code = 'OK'
 if ResponseStatus[code] is ResponseStatus.SUCCESS:
     print('The request completed successfully')
 ```
+### [ __new__](https://www.pythontutorial.net/python-oop/python-__new__/)
+- When you create an instance of a class, Python first calls the __new__() method to create the object and then calls the __init__() method to initialize the object’s attributes.
+```python
+object.__new__(class, *args, **kwargs)
+```
+- To create the object of a class, you call the super().__new__() method.
+- You can call the object.__new__() method to create an object manually. However, you need to call the __init__() yourself manually after. 
+```python
+class SquareNumber(int):
+    def __new__(cls, value):
+        return super().__new__(cls, value ** 2)
+
+
+x = SquareNumber(3)
+print(x)  # 9
+```
+- **Note that you cannot do this by using the __init__() method** because the __init__() method of the built-in int takes no argument. The following code will result in an error:
+```python
+class SquareNumber(int):
+    def __init__(self, value):
+        super().__init__(value ** 2)
+
+
+x = SquareNumber(3)
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+```
+### [type Class](https://www.pythontutorial.net/python-oop/python-type-class/)
+- In Python, a class is an object of the class type.
+- Because the type class creates other classes, we often refer to it as a metaclass. A metaclass is a class used to create other classes.
+- When the Python interpreter encounters a class definition in the code, it will:
+	- First, extract the class body as string.
+```python
+	class_body = """
+def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+def greeting(self):
+    return f'Hi, I am {self.name}. I am {self.age} year old.'
+"""
+```
+	- Second, create a class dictionary for the class namespace.
+	`class_dict = {}`
+	- Third, execute the class body to fill up the class dictionary.
+	`exec(class_body, globals(), class_dict)`
+	The exec() function executes the class body and fills up the global and class namespaces.
+	- Finally, create a new instance of type using the above type() constructor.
+	`Person = type('Person', (object,), class_dict)`
+	
+### [Metaclass](https://www.pythontutorial.net/python-oop/python-metaclass/)
+- There is only one reason to use single trailing underscore which is to avoid conflicts with Python keywords. 
