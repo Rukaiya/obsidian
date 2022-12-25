@@ -5,6 +5,12 @@
 
 `python manage.py startapp polls`
 
+`python manage.py createsuperuser`
+
+`python manage.py migrate`
+
+`python manage.py makemigrations polls`
+
 ### Creating the Polls app[¶](https://docs.djangoproject.com/en/4.1/intro/tutorial01/#creating-the-polls-app "Permalink to this headline")
 **polls/views.py**
 ```python
@@ -78,7 +84,6 @@ urlpatterns = [
 ]
 ```
 ## Database setup
-`python manage.py migrate`
 - While you’re editing mysite/settings.py, set TIME_ZONE to your time zone.
 #### Creating models[¶](https://docs.djangoproject.com/en/4.1/intro/tutorial02/#creating-models "Permalink to this headline")
 **polls/models.py**
@@ -118,9 +123,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 ```
-`python manage.py makemigrations polls`
+
 #### Creating an admin user
-`python manage.py createsuperuser`
+
 **polls/admin.py**
 ```python
 from django.contrib import admin
