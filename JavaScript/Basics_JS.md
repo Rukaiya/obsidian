@@ -124,3 +124,38 @@ The Number() method returns the number of milliseconds since 1.1.1970.
 
 `const points = new Array(40, 100);`
 `result: ,,,,,,,,,,,`
+
+#### Array Methods
+> The `push()` method returns the new array **length**.
+
+> The `shift()` method returns the value that was **shifted out**.
+
+> Array elements can be deleted using the JavaScript operator `delete`. Using `delete` leaves undefined holes in the array. Use `pop()` or `shift()` instead.
+
+> The `concat()` method does not change the existing arrays. It always returns a new array.
+
+> The first parameter (2) defines the position where new elements should be added (spliced in). The second parameter (0) defines how many elements should be removed. The `splice()` method returns an array with the deleted items.
+```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+```
+>  `splice()` to remove elements without leaving "holes" in the array.
+```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 1);
+```
+> The `slice()` method slices out a piece of an array into a **new array**.
+```js
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(3);
+```
+```js
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1, 3);
+```
+### Date
+---
+> You cannot omit month. If you supply only one parameter it will be treated as milliseconds.
+```js
+new Date(year,month,day,hours,minutes,seconds,ms)
+```
