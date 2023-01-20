@@ -1,8 +1,9 @@
 ### coverage library
 #### Installation
-> pipenv install coverage
+` pipenv install coverage`
 
+#### Commands
 `coverage run ./manage.py test`
 `coverage report`
-*/venv/*
+`coverage html`
 `coverage run --omit='*/venv/*' manage.py test`

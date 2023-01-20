@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "1ad3732ddd7ed82a",
+    "type": "split",
+    "children": [
+      {
+        "id": "f01ce8cd7dc7a5f5",
+        "type": "tabs",
+        "dimension": 50.10989010989011,
+        "children": [
+          {
+            "id": "93576f1ef077f930",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Testing.md",
+                "mode": "source",
+                "source": false
+              }
+            },
+            "group": "951eb02a5b848843"
+          },
+          {
+            "id": "d041e32068cdadb0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.9"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "71656290964c19b5",
+        "type": "tabs",
+        "dimension": 49.89010989010989,
+        "children": [
+          {
+            "id": "005275d27fc43c70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Testing.md",
+                "mode": "preview",
+                "source": false
+              }
+            },
+            "group": "951eb02a5b848843"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e66e6431f5807e39",
+    "type": "split",
+    "children": [
+      {
+        "id": "f5042eaf17e89388",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "56b5d7dcd77c10b6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "863452692f6354b7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a789ea74d0389c5b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 148.5
+  },
+  "right": {
+    "id": "073062ee818e491d",
+    "type": "split",
+    "children": [
+      {
+        "id": "444f8ddb024fcaa2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6825ebe2cfd2e70c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Testing.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "70b62b5f3e84c1d1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Testing.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c03c2f289caff7b4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1d73a8fc08c55547",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Testing.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d041e32068cdadb0",
+  "lastOpenFiles": [
+    "Django Project Base.md",
+    "Django Basic.md",
+    "conflict-files-obsidian-git.md",
+    "gitignore.md",
+    "DSA.md",
+    "Python_Basics.md",
+    "Python_Class.md"
+  ]
+}
