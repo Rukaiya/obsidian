@@ -1,4 +1,34 @@
-#### Input
+### Walrus-operator
+---
+Walrus-operator is another name for assignment expressions. It is a way to assign to variables within an expression using the notation `NAME := expr`. The Assignment expressions allow a value to be assigned to a variable, even a variable that doesn’t exist yet.
+```py
+sample_data = [
+	{"userId": 1, "name": "rahul", "completed": False},
+	{"userId": 1, "name": "rohit", "completed": False},
+	{"userId": 1, "name": "ram", "completed": False},
+	{"userId": 1, "name": "ravan", "completed": True}
+]
+
+print("With Python 3.8 Walrus Operator:")
+for entry in sample_data:
+	if name := entry.get("name"):
+		print(f'Found name: "{name}"')
+
+print("Without Walrus operator:")
+for entry in sample_data:
+	name = entry.get("name")
+	if name:
+		print(f'Found name: "{name}"')
+```
+```py
+nums  = [1, 2, 3, 4]
+c = 0
+l2 = [c := c + x for x in nums]
+print(l2)
+# output: [1, 2, 6, 10]
+```
+### Input
+---
 There are a number of ways in which we can take input from stdin in [Python](https://www.geeksforgeeks.org/python-programming-language/). 
 -   [sys](https://www.geeksforgeeks.org/python-sys-module/).stdin
 	- The **sys** module in python helps us to access the variables maintained by the interpreter. It also provides functions to interact with the interpreter.
@@ -40,12 +70,16 @@ print('GeeksforGeeks')
 
 ```
 
-#### List
+### List
+---
 - To check if an element is present without getting error try these -
 	- `if item in list`
 	- `list.__contains__(value)`
+#### List Comprehension
+> newlist = [expression for item in iterable if condition == True]
 
-#### reduce() Function
+### reduce() Function
+---
 > reduce(fn,list)
 
 ``` python
@@ -58,7 +92,8 @@ total = reduce(lambda a, b: a + b, scores)
 print(total)
 
 ```
-#### [for-else](https://www.pythontutorial.net/python-basics/python-for-else/)
+### [for-else](https://www.pythontutorial.net/python-basics/python-for-else/)
+---
 * By using the `for else` statement, the program doesn’t need to use a `flag` and an `[if]` statement after the loop.
 
 #### [args paramereter](https://www.pythontutorial.net/python-basics/python-args/)

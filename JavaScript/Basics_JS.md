@@ -159,3 +159,6 @@ const citrus = fruits.slice(1, 3);
 ```js
 new Date(year,month,day,hours,minutes,seconds,ms)
 ```
+### Math Object
+---
+> The Math object has no constructor.T It is static. All methods and properties can be used without creating a Math object first.
