@@ -110,7 +110,21 @@ print(total)
 ### [for-else](https://www.pythontutorial.net/python-basics/python-for-else/)
 ---
 * By using the `for else` statement, the program doesn’t need to use a `flag` and an `[if]` statement after the loop.
-
+```py
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!")
+```
+### [while-else](https://www.w3schools.com/python/python_while_loops.asp)
+```py
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
+  ```
 ### [args paramereter](https://www.pythontutorial.net/python-basics/python-args/)
 ---
 * By convention, Python uses the `*args` for a variadic parameter.
@@ -275,3 +289,17 @@ Output:
 ```py
 ['apple', 'orange', 'cherry', 'kiwi', 'mango']
 ```
+### Dictionary
+Method| Syntax | Description
+:--- | --- | :---
+clear() | dictionary.clear() | Removes all the elements from the dictionary
+copy() | dictionary.copy() | Returns a copy of the dictionary
+fromkeys() | dictionary.fromkeys(keys, value) | Returns a dictionary with the specified keys and value(default is None)
+get() | dictionary.get(key) | Returns the value of the specified key
+items() | dictionary.items() | Returns a list containing a tuple for each key value pair
+keys() | dictionary.keys() | Returns a list containing the dictionary's keys
+pop() | dictionary.pop(keyname, defaultvalue) | Removes the element with the specified key. If this parameter is not specified, and the no item with the specified key is found, an error is raised.
+popitem() | dictionary.popitem() | Removes the last inserted key-value pair
+setdefault() | dictionary.setdefault(keyname, value) | dictReturns the value of the specified key. If the key does not exist: insert the key, with the specified value
+update() | dictionary.update(dict) | Updates the dictionary with the specified key-value pairs
+values() | dictionary.values() | Returns a list of all the values in the dictionary
