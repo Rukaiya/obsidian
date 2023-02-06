@@ -1,4 +1,4 @@
-### [Data Types](https://www.w3schools.com/python/python_datatypes.asp)
+## [Data Types](https://www.w3schools.com/python/python_datatypes.asp)
 ---
 - Text Type:	`str`
 - Numeric Types:	`int`, `float`, `complex`
@@ -8,13 +8,13 @@
 - Boolean Type:	`bool`
 - Binary Types:	`bytes`, `bytearray`, `memoryview`
 - None Type:	`NoneType`
-### global Keyword
+## global Keyword
 ---
 - To create a global variable inside a function, you can use the global keyword.
 ```py
 global x
 ```
-### Random Number
+## Random Number
 - Python does not have a random() function to make a random number, but Python has a **built-in module** called `random` that can be used to make random numbers:
 ```py
 import random
@@ -22,7 +22,7 @@ import random
 print(random.randrange(1, 10))
 ```
 
-### Walrus-operator
+## Walrus-operator
 ---
 Walrus-operator is another name for assignment expressions. It is a way to assign to variables within an expression using the notation `NAME := expr`. The Assignment expressions allow a value to be assigned to a variable, even a variable that doesn’t exist yet.
 ```py
@@ -51,7 +51,7 @@ l2 = [c := c + x for x in nums]
 print(l2)
 # output: [1, 2, 6, 10]
 ```
-### Input
+## Input
 ---
 There are a number of ways in which we can take input from stdin in [Python](https://www.geeksforgeeks.org/python-programming-language/). 
 -   [sys](https://www.geeksforgeeks.org/python-sys-module/).stdin
@@ -69,7 +69,7 @@ print("Exit")
 ```
 -   [input()](https://www.geeksforgeeks.org/python-input-function/)
 -   [fileinput.input()](https://www.geeksforgeeks.org/fileinput-input-in-python/)
-#### Output
+### Output
 - stdout
 ```python
 import sys
@@ -93,7 +93,7 @@ log.warning('Error: Hello World')
 print('GeeksforGeeks')
 
 ```
-### reduce() Function
+## reduce() Function
 ---
 > reduce(fn,list)
 
@@ -107,7 +107,7 @@ total = reduce(lambda a, b: a + b, scores)
 print(total)
 
 ```
-### [for-else](https://www.pythontutorial.net/python-basics/python-for-else/)
+## [for-else](https://www.pythontutorial.net/python-basics/python-for-else/)
 ---
 * By using the `for else` statement, the program doesn’t need to use a `flag` and an `[if]` statement after the loop.
 ```py
@@ -116,7 +116,7 @@ for x in range(6):
 else:
   print("Finally finished!")
 ```
-### [while-else](https://www.w3schools.com/python/python_while_loops.asp)
+## [while-else](https://www.w3schools.com/python/python_while_loops.asp)
 ```py
 i = 1
 while i < 6:
@@ -125,24 +125,24 @@ while i < 6:
 else:
   print("i is no longer less than 6")
   ```
-### [args paramereter](https://www.pythontutorial.net/python-basics/python-args/)
+## [args paramereter](https://www.pythontutorial.net/python-basics/python-args/)
 ---
 * By convention, Python uses the `*args` for a variadic parameter.
 * `*args`returns a tuple, not a list.
 
 
-### [kwargs Parameter](https://www.pythontutorial.net/python-basics/python-kwargs/)
+## [kwargs Parameter](https://www.pythontutorial.net/python-basics/python-kwargs/)
 ---
 * The `**kwargs` is called a keyword parameter.
 * When a function has the `**kwargs` parameter, it can accept a variable number of [keyword arguments](https://www.pythontutorial.net/python-basics/python-keyword-arguments/) as a [dictionary](https://www.pythontutorial.net/python-basics/python-dictionary/).
-### [Partial Functions](https://www.pythontutorial.net/python-basics/python-partial-functions/)
+## [Partial Functions](https://www.pythontutorial.net/python-basics/python-partial-functions/)
 ---
 * Partial functions are used to reduce the number of arguments of a function to simplify the function’s signature.
 * The `partial` function returns new `partial` object, which is a [callable](https://www.pythontutorial.net/python-built-in-functions/python-callable/).
 ```python
 functools.partial(fn, /, *args, **kwargs)
 ```
-### [Type Hints](https://www.pythontutorial.net/python-basics/python-type-hints/)
+## [Type Hints](https://www.pythontutorial.net/python-basics/python-type-hints/)
 ---
 - Mypy package; type checker tool
 
@@ -163,14 +163,14 @@ def add(x: Union[int, float], y: Union[int, float]) -> Union[int, float]:
 def add(x: int | float, y: int | float) -> int | float:
     return x + y
 ```
-### [File](https://www.pythontutorial.net/python-basics/python-create-text-file/)
+## [File](https://www.pythontutorial.net/python-basics/python-create-text-file/)
 ---
 *  Creating file in 'w' mode won't throw an error if it already exists but will rewrite the texts. So if we want to show error use 'x' mode which will return FileExistsError.
 * You can also check the existing of file with these [build in methods](https://www.pythontutorial.net/python-basics/python-check-if-file-exists/).
-### Yield
+## Yield
 ---
 - **return sends a specified value back to its caller whereas yield can produce a sequence of values**. We should use yield when we want to iterate over a sequence, but don't want to store the entire sequence in memory. Yield is used in Python generators.
-###  String Method
+##  String Method
 ---
 Method| Syntax | Description
 :--- | --- | :--- 
@@ -219,7 +219,7 @@ translate() | string.translate(table) | Returns a translated string. If you use 
 upper() | string.upper() | Converts a string into upper case
 zfill() | string.zfill(len) | Fills the string with a specified number of 0 values at the beginning
 
-### [Format Method](https://www.w3schools.com/python/ref_string_format.asp)
+## [Format Method](https://www.w3schools.com/python/ref_string_format.asp)
 ---
 Placeholder|Description
 ---|---
@@ -247,7 +247,7 @@ Placeholder|Description
 :n	| Number format
 :%	| Percentage format
 
-### Operators
+## Operators
 ---
 - Arithmetic operators
 - Assignment operators
@@ -257,7 +257,7 @@ Placeholder|Description
 - Membership operators (`in`, `not in`)
 - Bitwise operators
 
-### Collections (Arrays)
+## Collections (Arrays)
 There are four collection data types in the Python programming language:
 
 - **List** is a collection which is ordered and changeable. Allows duplicate members.
@@ -270,12 +270,12 @@ There are four collection data types in the Python programming language:
 
 - **As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
 
-### List
+## List
 ---
 - To check if an element is present without getting error try these -
 	- `if item in list`
 	- `list.__contains__(value)`
-#### List Comprehension
+### List Comprehension
 > newlist = [expression for item in iterable if condition == True]
 ```py
 fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
@@ -289,7 +289,7 @@ Output:
 ```py
 ['apple', 'orange', 'cherry', 'kiwi', 'mango']
 ```
-### Tuple
+## Tuple
 ---
 - One item tuple
 ```py
@@ -301,7 +301,7 @@ Method| Syntax | Description
 :--- | --- | :--- 
 count()| tuple.count(value) | Returns the number of times a specified value occurs in a tuple
 index()| tuple.index(value) | Searches the tuple for a specified value and returns the position of where it was found
-### Set
+## Set
 ---
 Method| Syntax | Description
 :--- | --- | :--- 
@@ -314,15 +314,15 @@ discard() | set.discard(value) | Remove the specified item
 intersection() | set.intersection(set) | Returns a new set, that is the intersection of two other sets
 intersection_update() | set.intersection_update(set) | Removes the items in this set that are not present in other, specified set(s)
 isdisjoint() | set.isdisjoint(set) | Returns whether two sets have a intersection or not
-issubset() Returns whether another set contains this set or not
-issuperset()	Returns whether this set contains another set or not
-pop()	Removes an element from the set
-remove()	Removes the specified element
+issubset() | set.issubset(set) | Returns whether another set contains this set or not
+issuperset() | set.issuperset(set) | Returns whether this set contains another set or not
+pop() | set.pop() | Removes an element from the set. The `pop()` method returns removed item.
+remove() | set.remove(item) | Removes the specified element. the `remove()` method will raise an error if the specified item does not exist
 symmetric_difference() | set.symmetric_difference(set) | Returns a new set with the symmetric differences of two sets
 symmetric_difference_update() | set.symmetric_difference_update(set) | inserts the symmetric differences from this set and another
-union()	Return a set containing the union of sets
-update()	Update the set with the union of this set and others
-### Dictionary
+union() | set.union(set1, set2...) | Return a set containing the union of sets
+update() | set.update(set) | Update the set with the union of this set and others
+## Dictionary
 ---
 Method| Syntax | Description
 :--- | --- | :---
