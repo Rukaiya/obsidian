@@ -1,7 +1,26 @@
 **Everything in Python is an object including a [Class](https://www.pythontutorial.net/python-oop/python-class/).**
-### Class Variables
+
+## Inheritance
+---
+> When you add the `__init__()` function, the child class will no longer inherit the parent's `__init__()` function.
+To keep the inheritance of the parent's `__init__()` function, add a call to the parent's `__init__()` function:
+
+```py
+class Student(Person):
+  def __init__(self, fname, lname):
+    Person.__init__(self, fname, lname)
+```
+- Python also has a `super()` function that will make the child class inherit all the methods and properties from its parent:
+```py
+class Student(Person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
+```
+
+## Class Variables
+---
 - Python stores class variables in the `__dict__` attribute. The `__dict__` is a mapping proxy, which is a dictionary.
-#### Aceess
+### Aceess
 - Dot (.) notation
 - `getattr()`
 	- If the class variable doesn’t exist, python will throw `AttributeError` exception. To avoid the exception, you can specify a default value if the class variable doesn’t exist like this:
@@ -9,22 +28,22 @@
 		media_type = getattr(HtmlDocument, 'media_type', 'text/html')
 		print(media_type) # text/html
 		```
-#### Set Value
+### Set Value
 - `setattr()`
-#### Delete 
+### Delete 
 - `delattr()`
 - `del`
-### Class Function
+## Class Function
 - When a function is defined inside a class, it’s purely a function. However, that function is accessed via an object, the function becomes a **method**.
 - Python always implicitly passes the **object to the method** as the first argument.
 - When a method creates an instance of the class and returns it, the method is called a **factory method**.
-### [Static Method](https://www.pythontutorial.net/python-oop/python-static-methods/)
+## [Static Method](https://www.pythontutorial.net/python-oop/python-static-methods/)
 - Static methods aren’t bound to an object so it cannot access and modify an object state.
 
 - In addition, Python doesn’t implicitly pass the `cls` parameter (or the `self` parameter) to static methods. Therefore, static methods cannot access and modify the class’s state.
 
 - In practice, you use static methods to define utility methods or group [functions](https://www.pythontutorial.net/python-basics/python-functions/) that have some logical relationships in a class.
-### [Property](https://www.pythontutorial.net/python-oop/python-properties/)
+## [Property](https://www.pythontutorial.net/python-oop/python-properties/)
 * To define a getter and setter method while achieving backward compatibility, you can use the `property()` class.
 ```python
 class Person:
@@ -45,7 +64,7 @@ class Person:
 
 > [Cache calculated properties](https://www.pythontutorial.net/python-oop/python-readonly-property/)
 
-### [Enumeration](https://www.pythontutorial.net/python-oop/python-enumeration/)
+## [Enumeration](https://www.pythontutorial.net/python-oop/python-enumeration/)
 ```python
 from enum import Enum
 
@@ -91,7 +110,7 @@ code = 'OK'
 if ResponseStatus[code] is ResponseStatus.SUCCESS:
     print('The request completed successfully')
 ```
-### [ __new__](https://www.pythontutorial.net/python-oop/python-__new__/)
+## [ __new__](https://www.pythontutorial.net/python-oop/python-__new__/)
 - When you create an instance of a class, Python first calls the __new__() method to create the object and then calls the __init__() method to initialize the object’s attributes.
 ```python
 object.__new__(class, *args, **kwargs)
@@ -118,7 +137,7 @@ x = SquareNumber(3)
 
 TypeError: object.__init__() takes exactly one argument (the instance to initialize)
 ```
-### [type Class](https://www.pythontutorial.net/python-oop/python-type-class/)
+## [type Class](https://www.pythontutorial.net/python-oop/python-type-class/)
 - In Python, a class is an object of the class type.
 - Because the type class creates other classes, we often refer to it as a metaclass. A metaclass is a class used to create other classes.
 - When the Python interpreter encounters a class definition in the code, it will:
@@ -141,5 +160,5 @@ def greeting(self):
 	- Finally, create a new instance of type using the above type() constructor.
 	`Person = type('Person', (object,), class_dict)`
 	
-### [Metaclass](https://www.pythontutorial.net/python-oop/python-metaclass/)
+## [Metaclass](https://www.pythontutorial.net/python-oop/python-metaclass/)
 - There is only one reason to use single trailing underscore which is to avoid conflicts with Python keywords. 
