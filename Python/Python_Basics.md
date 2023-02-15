@@ -261,3 +261,8 @@ myiter = iter(myclass)
 for x in myiter:
   print(x)
 ```
+
+## Dates
+---
+> A date in Python is not a data type of its own.
+
