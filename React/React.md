@@ -1,3 +1,11 @@
+## Vite Project
+---
+> npm create vite@latest
+
+> npm install
+
+> npm run dev
+
 ## ShareMe
 ---
 #### Sanity Commands
@@ -11,3 +19,4 @@ sanity init --project-plan boosted-free-2021-12-08
 ---
 To install dependencies from package.json changed manually.
 >`npm install --leagcy-peer-deps`
+
