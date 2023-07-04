@@ -1,4 +1,9 @@
-bb## Vite Project
+- [Vite Project](#vite-project)
+- [ShareMe](#shareme)
+    - [Sanity Commands](#sanity-commands)
+  - [YoutubeClone](#youtubeclone)
+
+## Vite Project
 ---
 > npm create vite@latest </br>
 or </br>
@@ -7,8 +12,6 @@ or </br>
 > npm install
 
 > npm run dev
-
-
 
 
 ## ShareMe
