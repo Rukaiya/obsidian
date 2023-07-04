@@ -1,13 +1,26 @@
-### Ruby
+- [Ruby](#ruby)
+  - [Comments](#comments)
+  - [Variables](#variables)
+  - [Getting Input](#getting-input)
+  - [Data Types](#data-types)
+    - [Hash](#hash)
+    - [Array](#array)
+  - [Class](#class)
+
+# Ruby
 ---
 Ruby is an interpreted scripting language which means most of its implementations execute instructions directly and freely, without previously compiling a program into machine-language instructions.
 - dynamic
 - reflective
--object-oriented
+- object-oriented
 - general-purpose programming language.
 
+> Objects are created by classes
+
+> `irb --simple-prompt` canbe used for more simplier view of the prompt
+
 It is designed and developed in the mid-1990s by Yukihiro “Matz” Matsumoto in Japan.
-### Comments
+## Comments
 
 - `#` is called the pound character in ruby and it is used to add comments to your code.
 - =begin, =end are used for multi-line comments
@@ -19,9 +32,9 @@ a multi line
 comment in ruby
 = end
 ```
-### Variables
+## Variables
 - Don’t need to mention its type
-### Getting Input
+## Getting Input
 - ‘gets.chomp’ is used to take input from user.
 - ‘print’ can be used instead for ‘puts’to print without a new line.
 ```ruby
@@ -33,7 +46,7 @@ puts " You are #{age} year old and your height is #{height} cms"
 ```
 - gets.chomp.to_i is used to get integer input from user.
 - gets.chomp.to_f
-### Data Types
+## Data Types
 - Numbers
 - Boolean
 - Strings
@@ -56,3 +69,9 @@ ary.each do |i|
  puts i
 end
 ```
+
+## Class
+---
+- Classes in Ruby are first-class objects—each is an instance of class `Class`.
+- Defining a class lets you group behaviors (methods) into convenient bundles
+- Classes are named with `Constants`. `Contants` can't be overwritten.
