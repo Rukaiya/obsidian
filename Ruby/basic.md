@@ -7,7 +7,6 @@
   - [Data Types](#data-types)
     - [Hash](#hash)
     - [Array](#array)
-  - [Class](#class)
 
 # Ruby
 
@@ -107,10 +106,4 @@ ary.each do |i|
 end
 ```
 
-## Class
 
----
-
-- Classes in Ruby are first-class objects—each is an instance of class `Class`.
-- Defining a class lets you group behaviors (methods) into convenient bundles
-- Classes are named with `Constants`. `Contants` can't be overwritten.
